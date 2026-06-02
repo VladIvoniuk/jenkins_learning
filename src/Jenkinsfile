@@ -51,8 +51,8 @@ pipeline {
 
             steps {
                 sh '''
-                    
-                    npx --version
+                    npm install nelify-cli
+                    node_modules/.bin/netlify --version
                  '''
             }
         }
